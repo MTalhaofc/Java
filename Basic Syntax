@@ -1,0 +1,161 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.math.*;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+     byte age7 = 30; //primitives 
+    int phone = 1234567890;
+    long phone2 = 123345678900L;
+    float pi = 3.14F ;
+    char letter = '@';    
+//non-primitives
+String name = new String("Talha");
+System.out.println(name.length());
+String fname = "Muhammad";
+String lname = "Talha";
+String oname = fname+lname;
+System.out.println(oname);
+System.out.println(oname.length());
+System.out.println(oname.charAt(5));
+System.out.println(oname.charAt(0));
+String name2 = oname.replace('T', 'B');
+System.out.println(name2);
+String name3 = "Muhammad Talha";
+// System.out.println(name3.substring(0,9));
+/*ARRAYS */
+int [] marks = new int[3];
+marks[0]= 97;
+marks[1]=96;
+marks[2]=95;
+System.out.println(marks[0]);
+System.out.println(marks.length);
+Arrays.sort(marks);
+System.out.println(marks[0]);
+/*2D ARRAYS  */
+int[] marks2 = {95,97,98};
+int[][] finalmarks ={{97,96,95},{96,97,98}};
+System.out.println(finalmarks[1][1]);
+double price =100.9999;
+double finalprice = price +18;
+System.out.println(finalprice);
+int p = 100;
+int fp = p + (int) 18.9999;
+System.out.println(fp);
+int age1;
+age1 =30;
+age1 =31;
+final int age4 =34;
+// age4 = 35; //Cannot be done duw to final keyword
+// /*DAY2 */
+          double a =1;
+          double b = 2;
+          double mod = a%b;
+          System.out.println(mod);      
+
+ b++;
+System.out.println(b);
+++b;
+System.out.println(b);
+b--;
+System.out.println(b);
+--b;
+System.out.println(b);
+
+System.out.println(Math.max(9,7));
+System.out.println(Math.min(9, 7));
+System.out.println((int)(Math.random()*100));
+Scanner input = new Scanner(System.in);
+System.out.println("age?");
+float age3 = input.nextFloat();
+System.out.println(age3);
+
+Scanner sc = new Scanner(System.in);
+String namenew = sc.nextLine();
+System.out.println(namenew);
+
+
+boolean issunup = false;
+if (issunup == true ) {
+    System.out.println("Day");
+}
+else
+{
+    System.out.println("Night");
+}
+
+int age5 = 3;
+if (age5 >= 18) 
+{
+System.out.println("vote");    
+}
+else{
+    System.out.println("not");
+}
+
+int ab =60;
+int bc= 40;
+if(ab< 50 && bc<50)
+{System.out.println("wow");}
+
+if(ab<50 || bc<50)
+{System.out.println("nahh");}
+
+boolean isadult= false;
+if (isadult) {
+    System.out.println("adult");
+}
+else{
+    System.out.println("not");
+}
+/*First logic */
+Scanner sc1 = new Scanner(System.in);
+System.out.println("Your total amount");
+// Pen = 50
+// pencil = 15
+int userprice = sc1.nextInt();
+if(userprice>=65){ //both
+System.out.println("Pencil and pen both");
+}
+if (userprice <= 64 && userprice >=50) {
+System.out.println("pen or pencil");    //pen or pencil
+}
+if (userprice >=15 && userprice<=49) {
+    System.out.println("pencil");  //only pencil
+    
+Scanner sc2 = new Scanner(System.in);
+System.out.println("Your total amount");
+// Pen = 10
+// book = 40
+int userprice1 = sc2.nextInt();
+if(userprice1<65){ //both
+System.out.println("Pencil and pen both");
+}
+
+int day = 2;
+switch (day) {
+    case 1:
+        System.out.println("MonDay");        break;
+
+        case 2:
+        System.out.println("tuesday");        break;
+
+        case 3:
+        System.out.println("wednesday");        break;
+
+        default:
+        System.out.println("thursday to sunday");
+
+
+    
+    
+}
+
+
+
+
+
+}
+    }
+}
+    
