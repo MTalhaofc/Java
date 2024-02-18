@@ -3,7 +3,30 @@ import java.util.Scanner;
 import java.math.*;
 
 public class App {
+ /*METHODS AND FUNCTIONS */
+    public static void printjava(){
+        System.out.println("Hello Java");
+    }
+    public static void printname
+(String name){
+    System.out.println(name);
+}
+public static void printsum(int a, int b){System.out.println(a+b);}
+    
+
+
+printname("Talha");        
+printname("2Nd attempt");
+printsum(10, 15);
+
     public static void main(String[] args) throws Exception {
+
+
+
+printname("Talha");        
+printname("2Nd attempt");
+printsum(10, 15);
+
      byte age7 = 30; //primitives 
     int phone = 1234567890;
     long phone2 = 123345678900L;
@@ -145,7 +168,58 @@ switch (day) {
 
         default:
         System.out.println("thursday to sunday");
+DAY 3 */
+    //LOOPS
+    
+    for(int i = 100;i >=1;i--){
+        System.out.println(i);
+    }
+    int i=100;
+    while (i>=1) {
+        System.out.println(i);
+        i=i-1;
+    }
+    int k= 100;
+    do{
+        System.out.println(k);
+        k--;}
+                 
+  
+ /*DAY 4 */
+    Scanner numberinput = new Scanner(System.in);
+    int number1;
+    do{
+        System.out.println("Enter Number");
+     number1 = numberinput.nextInt();   
+    System.out.println(number1);
 
+    }    
+
+    while(number1>=0);
+    /*Break and continue */
+int i =0;
+while (true) {
+
+    
+    if (i==3) {
+       i++;
+continue;
+    }  
+
+ System.out.println(i);
+ i++;
+ if (i>5) {
+    break;
+ }   
+ 
+}
+
+int[] marks7= {95,96,97};
+try{
+    System.out.println(marks7[5]);
+
+}catch(Exception exception){System.out.println("Lenght array is at 3");}
+System.out.println("Name is Talha");
 
     
     
